@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
+@font-face{
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+hgroup h1{
+    font-family: 'FonteLogo';
+    color: #993399;
+    font-size: 40pt;
+    position: absolute;
+    left: 400px;
+    top: 80px;
+}
+
+hgroup h2{
+    font-family: 'FonteLogo';
+    font-size: 17pt;
+    position: absolute;
+    left: 400px;
+    top: 170px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+    text-size: 40pt;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ddd; /* cinza claro */
+}
+
+div#interface {
+    position: relative; /* transforma a div em um container */
+    background-color: #fff; /* branco */
+    width: 950px;
+    margin: -23px auto 0px auto; /* por enquanto */
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5); /* sombra */
+    padding: 10px; /* espaçamento interno da div */
+}
+
+h1.titulo {
+    font-family: 'Titillium Web', sans-serif;
+    color: #fff;
+    font-size: 15pt;
+    background-color: #995099;
+    padding: 5px;
+}
+
+img#icone {
+    position: relative;
+    width: 300px;
+    top: 0px;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    left: 35px;
+}
+
+nav#menu {
+    display: block; /* transformar tudo o que é menu em um bloco */
+}
+
+/*usa-se hashtag para acessar um id no html */
+
+nav#menu ul {
+    list-style: none; /* remover marcadores da lista */
+    text-transform: uppercase; /* converter para maiúsculas */
+    position: relative; /* para que o menu possa ser colocado no topo, é preciso virar absoluto */
+    top: -5px; /* posicionado ao topo. valor negativo para empurrar para além da borda */
+    right: 25px; /* posicionado à direito */
+}
+
+nav#menu li {
+    display: inline-block; /* colocar os itens lado a lado */
+    background-color: #ddd; /* cor de fundo - cinza */
+    padding: 10px; /* aumentar o espaçamento interno da caixa cinza */
+    margin: 2px; /* aumentar o espaço externo da caixa cinza */
+    transition: background-color 1.5s;
+
+}
+
+nav#menu li:hover {
+    background-color: #606060; /* cinza escuro */
+}
+
+nav#menu h1 {
+    display: none; /* ocultar a tag h1 que está em nav id menu */
+}
+
+nav#menu a {
+    color: #000; /* preto */
+    text-decoration: none; /* remove o sublinhado */
+}
+
+/* ao passar o mouse sobre o link (tag a) */
+nav#menu a:hover {
+    color: #fff; /* branco */
+    text-decoration: underline;
+}
+
+img#exemplo {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    left: 70px;
+}
+
+nav#top {
+    position: absolute;
+    display: block; /* transformar tudo o que é menu em um bloco */
+    top: 10px;
+    right: 65px;
+}
+
+/*usa-se hashtag para acessar um id no html */
+
+nav#top ul {
+    list-style: none; /* remover marcadores da lista */
+    text-transform: uppercase; /* converter para maiúsculas */
+    position: relative; /* para que o menu possa ser colocado no topo, é preciso virar absoluto */
+    top: -5px; /* posicionado ao topo. valor negativo para empurrar para além da borda */
+    right: 25px; /* posicionado à direito */
+}
+
+nav#top li {
+    display: inline-block; /* colocar os itens lado a lado */
+    background-color: #ddd; /* cor de fundo - cinza */
+    padding: 10px; /* aumentar o espaçamento interno da caixa cinza */
+    margin: 2px; /* aumentar o espaço externo da caixa cinza */
+    transition: background-color 1.5s;
+
+}
+
+nav#top li:hover {
+    background-color: #606060; /* cinza escuro */
+}
+
+nav#top h1 {
+    display: none; /* ocultar a tag h1 que está em nav id menu */
+}
+
+nav#top a {
+    color: #000; /* preto */
+    text-decoration: none; /* remove o sublinhado */
+}
+
+/* ao passar o mouse sobre o link (tag a) */
+nav#top a:hover {
+    color: #fff; /* branco */
+    text-decoration: underline;
+}
+
+form {
+    width: 500px; /* largura */
+    margin: auto; /* centralizar */
+}
+
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255, 255, 255, 0.7); /* branco com opacidade 70% */
+}
+
+input:hover, textarea:hover {
+    background-color: #ddd;
+}
+
+legend {
+    color: #888; /* cinza escuro */
+    font-weight: bolder; /* negrito */
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+fieldset {
+    font-family: sans-serif;
+    border-color: #cecece; /* cinza claro */
+    margin: 20px;
+}
+
+fieldset#idSexo {
+    width: 150px;
+}
+
+img#eu {
+    display: block;
+    position: relative;
+    width: 200px;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+#direita {
+    display: block;
+    position: absolute;
+    float: right;
+    width: 600px;
+    left: 270px;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+}

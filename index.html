@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AdvancedTechnology</title>
+    <link rel="stylesheet" type="text/css"  href="inicio.css">
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+        <hgroup>
+            <h1>AdvancedTechnology</h1>
+            <h2>Aprenda um pouco sobre TI</h2>
+        </hgroup>
+        <img id="icone" src="imagens/logo.PNG">
+            <nav id="top">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="index.html#autor">Sobre o Autor</a></li>
+                <li><a href="index.html#faleconosco">Fale Conosco</a></li>
+            </ul>
+            </nav>
+        </header>
+            <h1 class="titulo">O que é TI?</h1>
+            <p>Basicamente, <b>TI</b> é a abreviação do termo Tecnologia da Informação.</p>
+            <p>Por sua vez, Tecnologia da Informação é a tradução do inglês para Information Technology, ou seja, TI em inglês se abrevia IT.</p>
+            <p>É importante deixar esses termos definidos, pois no mercado de tecnologia nacional é comum que ambos sejam utilizados.</p>
+            <p>Ok! Agora você aprendeu o significado literal do termo, mas sabemos que TI, na verdade, é um conceito. É isso que você realmente precisa entender.</p>
+            <p>Sendo assim, podemos dizer que a TI são todas as soluções tecnológicas que usamos para produzir, acessar, transmitir e gerenciar dados, que sejam úteis para as empresas.</p>
+
+            <img id="exemplo" src="imagens/ti.png">
+
+            <h1 class="titulo">Exemplos de Profissões de TI</h1>
+           <nav id="menu">
+            <ul>
+              <li><a href="profissoes.html">Cientista de Dados</a></li>
+              <li><a href="profissoes.html#engenheiro">Engenheiro de Software</a></li>
+              <li><a href="profissoes.html#especialista">Especialista em Segurança da Informação</a></li>
+
+            </ul>
+           </nav>
+        <h1 class="titulo" id="autor">Sobre o Autor</h1>
+        <p id="direita">Meu nome é Daniel Andrade Cunto Mureb, tenho 15 anos e eu sou um estudante na área de Tecnologia da Informação. Desde sempre tive curiosidade nesta área, então fui focando nos meus estudos para alcançar a minha meta que era entrar em um colégio técnico.
+        Estudei minha vida toda em colégio particular, me preparando pra passar nas provas de concurso e finalmente consegui. Passei pro colégio Firjan Sesi SENAI. <br><br>
+        Hoje procuro absorver o máximo de conhecimento possível das mais variadas pessoas, para ter um currículo atraente para que eu possa ser bem sucedido e realizar meu sonho de viajar o mundo.
+            </p>
+
+        <img id="eu" src="imagens/eu.jfif">
+
+        <h1 class="titulo" id="faleconosco">Fale Conosco</h1>
+        <p>Nossa equipe está a sua disposição! Enviem suas dúvidas e sugestões aqui.</p>
+
+        <form method="post" id="idcontato" action="mailto:danielmureb@hotmail.com" oninput="calc_total()">
+
+    <fieldset id="idusuario">
+    <legend>Identificação do Usuário</legend>
+        <p><label for="idnome">Nome:</label><input type="text" name="nnome" id="idnome" size="20" maxlength="40" placeholder="Nome Completo"> </p>
+        <p><label for="idsenha">Senha:</label><input type="password" name="nsenha" id="idsenha" size="8" maxlength="8" placeholder="até 8 dígitos"> </p>
+        <p><label for="idemail">E-mail:</label><input type="email" name="nemail" id="idemail" size="20" maxlength="40"> </p>
+        <fieldset id="idsexo">
+              <legend>Sexo:</legend>
+            <input type="radio" name="nsexo" id="idmasc" checked><label for="idmasc"> Masculino</label><br>
+            <input type="radio" name="nsexo" id="idfem"><label for="idfem"> Feminino</label>
+        </fieldset>
+        <p><label for="idnasc">Data de Nascimento:<input type="date" name="nnasc" id="idnasc"></p>
+    </fieldset>
+
+    <fieldset id="idendereco">
+    <legend>Endereço do Usuário</legend>
+        <p><label for="idrua">Logradouro:</label><input type="text" name="nrua" id="idrua" size="13" maxlength="80" placeholder="Rua, Av, Travessa...">
+        <p><label for="idnum">Número:</label><input type="number" name="nnum" id="idnum" min="0" max="9999"></p>
+        <p><label for="idest">Estado:</label>
+            <select name="nEst" id="idest">
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </p>
+        <p><label for="idcid">Cidade:</label><input type="text" name="ncid" id="idcid" size="20" maxlength="40" placeholder="Sua Cidade" list="cidades">
+            <datalist id="cidades">
+                <option value="Rio de Janeiro"></option>
+                <option value="Nova Iguaçu"></option>
+                <option value="Niterói"></option>
+                <option value="Belford Roxo"></option>
+            </datalist>
+        </p>
+    </fieldset>
+
+    <fieldset id="idmensagem">
+        <legend>Mensagem do Usuário</legend>
+        <p><label for="idurg">Grau de Urgência:</label> Min:<input type="range" name="nurg" id="idurg" min="0" max="10" step="2"> Max:</p>
+        <p><label for="idmsg">Mensagem:</label>
+            <textarea name="nmsg" id="idmsg" cols="45" rows="5" maxlength="250" placeholder="Deixe aqui sua mensagem"></textarea>
+        </p>
+    </fieldset>
+
+     <input type="image" src="imagens/botao-enviar.png" name="nenviar">
+        </form>
+
+         <footer id="rodape">
+        <p>Copyright 2023 - by Daniel Mureb<br>
+            <a href="https://www.instagram.com/dmureb_/" target="_blank">Instagram</a>
+
+    </footer>
+
+    </div>
+</body>
+</html>

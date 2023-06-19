@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
+@font-face{
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+p.tamanho {
+    width: 900px;
+    font-size: 15pt;
+    margin: auto;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px; /* espaçamento entre bordas */
+    margin: auto;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+/* id eu pego com # e class eu pego com . */
+
+table#tabelaspec td.ce {
+    background-color: #606060;
+    color: #fff;
+    vertical-align: top;
+    text-align: right;
+    font-weight: bolder; /* negrito */
+    }
+
+table#tabelaspec td.cd {
+    background-color: #cecece; /* cinza claro */
+}
+
+table#tabelaspec caption {
+    color: #888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    display: block; /* transforma o obj em bloco (se desprende) */
+    float: right; /* flutuar para a direita */
+    font-size: 8pt;
+    margin-top 10px;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+}
